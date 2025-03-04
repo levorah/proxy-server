@@ -19,6 +19,8 @@ app.get('/fetch/*', async (req, res) => {
         const response = await axios.get(targetUrl, {
             headers: { ...req.headers, host: new URL(targetUrl).host }
         })
+        res.set(response.headers)
+        res.status(response.status).send(response.data)
     } catch (error) {
         res.status(500).json({ error: "Failed to fetch data", details: error.message })
     }

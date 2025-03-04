@@ -1,0 +1,13 @@
+{
+  "name": "proxy-server",
+  "version": "1.0.0",
+  "description": "Used to bypass cors issue . Used as thing proxy or forward proxy to allow cors to our servers ",
+  "main": "src/server.js",
+  "repository": "git@github-levorah:levorah/proxy-server",
+  "author": "levorah <levora004@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.2"
+  }
+}
